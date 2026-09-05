@@ -1,0 +1,11 @@
+[Unit]
+Description=Periodically check for Claude Home Assistant updates
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=24h
+Persistent=true
+Unit=claude-assistant-update.service
+
+[Install]
+WantedBy=timers.target
